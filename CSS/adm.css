@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "T T T T T "
+    "N N N N N "
+    "M M M M M ";
+  background-image: url(/photo/fon.jpg);
+}
+.top {
+  display: grid;
+  grid-area: T;
+  height: 250px;
+  grid-template-areas: "L TM R";
+  grid-template-columns: 30% 40% 30%;
+  background-image: url(/photo/sinyi-fon.jpg);
+}
+.left {
+  display: grid;
+  grid-area: L;
+}
+.top-main {
+  display: grid;
+  grid-area: TM;
+  background-image: url(../photo/500x500.png);
+  background-repeat: no-repeat;
+  margin-left: 35%;
+}
+.right {
+  display: grid;
+  grid-area: R;
+}
+.MA {
+  grid-area: M;
+  height: 1000px;
+}
+.navigation {
+  display: grid;
+  grid-area: N;
+  grid-template-areas: "S SL F";
+  grid-template-columns: 0% 95% 5%;
+  background-image: url(/photo/blue-fon.jpg);
+  height: 100%;
+}
+.edge {
+  display: grid;
+  grid-area: S;
+}
+.function {
+  display: grid;
+  grid-area: F;
+  justify-items: end;
+}
+
+.slogan {
+  display: grid;
+  grid-area: SL;
+}
+.panelka {
+  background-color: #cce5ff;
+  padding: 20px;
+  border-radius: 5px;
+
+  justify-self: center;
+}
+.left {
+  display: grid;
+  grid-area: L;
+}
+
+.tablica {
+  background-color: #b9d6f3;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #0077cc;
+  padding: 8px;
+}
+
+th {
+  background-color: #0077cc;
+  color: white;
+}
+
+.tab-a {
+  color: #0077cc;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #0077cc;
+  border-radius: 5px;
+}
+
+.tab-a:hover {
+  background-color: #005ea3;
+  color: white;
+}
+
+.btn-del {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn-del:hover {
+  background-color: #005ea3;
+}
+
+.dop {
+  margin-top: 20px;
+}
+
+.dopav {
+  color: #0077cc;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #0077cc;
+  border-radius: 5px;
+}
+
+.dopav:hover {
+  background-color: #005ea3; /* Смена фона при наведении */
+  color: white; /* Белый цвет текста при наведении */
+}

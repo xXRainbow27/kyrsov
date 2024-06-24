@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "T T T T T "
+    "N N N N N "
+    "M M M M M ";
+  background-image: url(/photo/fon.jpg);
+}
+.top {
+  display: grid;
+  grid-area: T;
+  height: 250px;
+  grid-template-areas: "L TM R";
+  grid-template-columns: 30% 40% 30%;
+  background-image: url(/photo/sinyi-fon.jpg);
+}
+.left {
+  display: grid;
+  grid-area: L;
+}
+.top-main {
+  display: grid;
+  grid-area: TM;
+  background-image: url(../photo/500x500.png);
+  background-repeat: no-repeat;
+  margin-left: 35%;
+}
+.right {
+  display: grid;
+  grid-area: R;
+}
+
+.navigation {
+  display: grid;
+  grid-area: N;
+  grid-template-areas: "S SL F";
+  grid-template-columns: 0% 95% 5%;
+  background-image: url(/photo/blue-fon.jpg);
+  height: 100%;
+}
+.edge {
+  display: grid;
+  grid-area: S;
+}
+.function {
+  display: grid;
+  grid-area: F;
+  justify-items: end;
+}
+.slogan {
+  display: grid;
+  grid-area: SL;
+}
+.dobavlenie {
+  display: grid;
+  grid-area: M;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 430px;
+}
+.dop {
+  margin-left: 20%;
+  margin-top: 3%;
+  display: grid;
+  justify-items: center;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: rgb(11, 51, 212);
+  box-shadow: 0 -3px rgb(23, 0, 113) inset;
+  transition: 0.2s;
+}
+.text {
+  font-size: 28px;
+  margin-bottom: 0%;
+  
+}
+.pole{
+  width: 80%;
+}
+h3{
+  text-align: center;
+
+  font-size: 35px;
+  color: #063a5a;
+}

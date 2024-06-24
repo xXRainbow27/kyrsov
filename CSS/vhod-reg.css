@@ -1,0 +1,117 @@
+.container {
+  background-image: url(../photo/vhod-fon.jpg);
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "T T T"
+    "fr fr fr";
+  grid-template-columns: 30% 40% 30%;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.top {
+  display: grid;
+  grid-area: T;
+  height: 250px;
+
+  grid-template-areas: "L TM R";
+  grid-template-columns: 30% 40% 30%;
+  background-image: url(../photo/sinyi-fon.jpg);
+}
+
+.top-main {
+  display: grid;
+  grid-area: TM;
+  background-image: url(../photo/500x500.png);
+  background-repeat: no-repeat;
+  margin-left: 35%;
+}
+.warn {
+    background-color: #ffcccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.main {
+  display: grid;
+  grid-area: m;
+  margin-bottom: 500px;
+}
+
+.krai-right {
+  display: grid;
+  grid-area: kr;
+}
+
+.krai-left {
+  display: grid;
+  grid-area: kl;
+}
+
+.fr {
+  display: grid;
+  grid-area: fr;
+  grid-template-areas: "kl m kr";
+  height: auto;
+}
+.navigation {
+  display: grid;
+  grid-area: N;
+  grid-template-areas: "S SL F";
+  grid-template-columns: 0% 95% 5%;
+  background-image: url(/photo/blue-fon.jpg);
+  height: 100%;
+}
+
+.form-vvod {
+  display: grid;
+  justify-content: center;
+  background-color: aquamarine;
+  border-radius: 15px;
+  border: 2px blue solid;
+  padding: 10px;
+}
+.warn {
+    background-color: #ffcccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form-vvod {
+  width: 100%;
+}
+
+.otstup {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.vod {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.knopka {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.knopka:hover {
+  background-color: #0056b3;
+}

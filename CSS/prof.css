@@ -1,0 +1,75 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "T T T "
+    "N N N"
+    "M M M";
+}
+.main {
+  display: grid;
+  grid-area: M;
+  background-image: url(/photo/fon.jpg);
+  height: 100%;
+}
+.top {
+  display: grid;
+  grid-area: T;
+  height: 250px;
+  /* margin-left: 42%; */
+  grid-template-areas: "L TM R";
+  grid-template-columns: 30% 40% 30%;
+  background-image: url(/photo/sinyi-fon.jpg);
+}
+.top-main {
+    display: grid;
+    grid-area: TM;
+    background-image: url(../photo/500x500.png);
+    background-repeat: no-repeat;
+    margin-left: 35%;
+  }
+.navigation {
+  display: grid;
+  grid-area: N;
+  grid-template-areas: "S SL F";
+  grid-template-columns: 0% 90% 10%;
+  background-image: url(/photo/blue-fon.jpg);
+  height: 100%;
+}
+.edge {
+  display: grid;
+  grid-area: S;
+}
+.function {
+  display: grid;
+  grid-area: F;
+}
+h1 {
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.info {
+  margin-top: 5%;
+  display: grid;
+  justify-self: center;
+  width: 300px;
+  padding: 20px;
+  height: auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20%;
+}
+
+.label {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.label:hover {
+  text-decoration: underline;
+}

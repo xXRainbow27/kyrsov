@@ -1,0 +1,164 @@
+.container {
+    display: grid;
+    grid-template-areas:
+      "T T T T T "
+      "N N N N N "
+      "M M M M M ";
+    background-image: url(/photo/fon.jpg);
+  }
+  .main {
+    display: grid;
+    grid-area: M;
+    height: auto;
+    margin-top: 2%;
+    grid-template-areas:
+      "tov tov tov tov"
+      "tov tov tov tov";
+    justify-content: space-evenly;
+    justify-items: center;
+    align-self: center;
+  }
+  .top {
+    display: grid;
+    grid-area: T;
+    height: 250px;
+    /* margin-left: 42%; */
+    grid-template-areas: "L TM R";
+    grid-template-columns: 30% 40% 30%;
+    background-image: url(/photo/sinyi-fon.jpg);
+  }
+  .navigation {
+    display: grid;
+    grid-area: N;
+    grid-template-areas: "S SL F";
+    grid-template-columns: 0% 95% 5%;
+    background-image: url(/photo/blue-fon.jpg);
+    height: 100%;
+  }
+
+  .function {
+    display: grid;
+    grid-area: F;
+    justify-items: end;
+  }
+  
+  .slogan {
+    display: grid;
+    grid-area: SL;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .left {
+    display: grid;
+    grid-area: L;
+  }
+  .top-main {
+    display: grid;
+    grid-area: TM;
+    background-image: url(../photo/500x500.png);
+    background-repeat: no-repeat;
+    margin-left: 35%;
+  }
+  .right {
+    display: grid;
+    grid-area: R;
+  }
+  
+  .cart {
+    background-color: #f2f7ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 24px;
+    color: #0048b3;
+    margin-bottom: 10px;
+}
+
+.box-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    background-color: #dce5ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.box a {
+    color: #0048b3;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.name {
+    font-size: 16px;
+    color: #0048b3;
+    margin-bottom: 5px;
+}
+
+.inp-quantity {
+    width: 50px;
+    padding: 5px;
+}
+
+.option-btn {
+    background-color: #0048b3;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.subTotal {
+    font-size: 14px;
+    color: #0048b3;
+}
+
+.empty {
+    font-size: 18px;
+    color: #0048b3;
+    text-align: center;
+}
+
+.morebtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.deletebtn {
+    padding: 10px 20px;
+    background-color: #0048b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deletebtn.disabled {
+    opacity: 0.5;
+}
+
+.morebtn p {
+    font-size: 18px;
+    color: #0048b3;
+}
+
+.morebtn p span {
+    color: #0048b3;
+    font-weight: bold;
+}

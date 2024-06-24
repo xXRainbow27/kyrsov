@@ -1,0 +1,143 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "T T T T T "
+    "N N N N N "
+    "M M M M M ";
+  background-image: url(/photo/fon.jpg);
+}
+.main {
+  display: grid;
+  grid-area: M;
+  height: auto;
+  margin-top: 2%;
+  grid-template-areas:
+    "aic aic aic aic"
+    "tov tov tov tov"
+    "tov tov tov tov";
+  justify-content: space-evenly;
+  justify-items: center;
+  align-self: center;
+}
+.top {
+  display: grid;
+  grid-area: T;
+  height: 250px;
+  /* margin-left: 42%; */
+  grid-template-areas: "L TM R";
+  grid-template-columns: 30% 40% 30%;
+  background-image: url(/photo/sinyi-fon.jpg);
+}
+.navigation {
+  display: grid;
+  grid-area: N;
+  grid-template-areas: "S SL F";
+  grid-template-columns: 0% 95% 5%;
+  background-image: url(/photo/blue-fon.jpg);
+  height: 100%;
+}
+.already-in-cart {
+  grid-area: aic;
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.edge {
+  display: grid;
+  grid-area: S;
+}
+.function {
+  display: grid;
+  grid-area: F;
+  justify-items: end;
+}
+
+.slogan {
+  display: grid;
+  grid-area: SL;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.left {
+  display: grid;
+  grid-area: L;
+}
+.top-main {
+  display: grid;
+  grid-area: TM;
+  background-image: url(../photo/500x500.png);
+  background-repeat: no-repeat;
+  margin-left: 35%;
+}
+.right {
+  display: grid;
+  grid-area: R;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 24px;
+  text-align: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 200px; /* Ширина карточки товара */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.card__top {
+  height: 150px; /* Высота верхней части карточки */
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.card__bottom {
+  padding: 10px;
+  background-color: #4291e6;
+}
+
+.card__prices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__price {
+  font-size: 18px;
+  color: #333;
+}
+
+.card__title {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.card__add {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.card__add:hover {
+  background-color: #0056b3;
+}
